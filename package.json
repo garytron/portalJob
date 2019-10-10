@@ -6,6 +6,8 @@
   "keywords": [],
   "dependencies": {
     "@sailshq/lodash": "^3.10.3",
+    "bcrypt": "^3.0.6",
+    "joi": "^14.3.1",
     "sails": "^1.2.3",
     "sails-hook-orm": "^2.1.1",
     "sails-hook-sockets": "^2.0.0",
