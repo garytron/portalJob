@@ -13,6 +13,7 @@ module.exports = {
                 name: params.name,
                 city: params.city,
                 address: params.address,
+                user: req.user
             });
 
             return res.ok(results);

@@ -63,7 +63,9 @@ module.exports = {
       if(!matchedPassword)
         res.badRequest({err: 'unauthorized'});
       
-      return res.ok(user);
+      const token = JWTService.issuer({user: user.id},'1 day');
+
+      return res.ok({token});
     
     } catch (err) {
       if(err.name === 'ValidationError')
